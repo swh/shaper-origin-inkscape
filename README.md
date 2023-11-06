@@ -15,3 +15,18 @@ cp ext/* '~/Library/Application Support/org.inkscape.Inkscape/config/inkscape/ex
 
 Look in the *Preferences | System | User extensions* menu and copy the files in `ext/` to there
 
+## Usage
+
+Create the shape you want to define the cut for, select it, then pick the type of cut from the menu:
+
+![Extensions menu screenshot](docs/screenshot.png?raw=true)
+
+Currently only dpeth in mm is supported, but adding inches would be easy.
+
+By default Inkscape includes with drawn width of the line in the size of the object, which makes it harder to use for Shaper Origin users - you can turn that off - there's an example file in the top level of this repo, `1msq-master.svg`.
+
+## Feedback
+
+If you have any suggestions or feedback, please send them via github.
+
+- Steve Harris, 2023-11-06
