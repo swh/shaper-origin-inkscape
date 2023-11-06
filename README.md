@@ -29,4 +29,4 @@ By default Inkscape includes with drawn width of the line in the size of the obj
 
 If you have any suggestions or feedback, please send them via github.
 
-- Steve Harris, 2023-11-06
+ - Steve Harris, 2023-11-06
