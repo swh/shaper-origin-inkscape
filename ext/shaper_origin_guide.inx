@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+  <name>Make guide</name>
+  <id>org.plugin.origin.guide</id>
+  <param name="guide" type="bool" value="true" gui-hidden="true"></param>
+  <effect>
+    <effects-menu>
+      <submenu name="Shaper Origin"/>
+    </effects-menu>
+  </effect>
+  <script>
+    <command location="inx" interpreter="python">shaper_origin.py</command>
+  </script>
+</inkscape-extension>

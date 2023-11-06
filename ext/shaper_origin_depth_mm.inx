@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+  <name>Set depth (mm)</name>
+  <id>org.plugin.origin.depth_mm</id>
+  <param name="set-depth-mm" type="bool" value="true" gui-hidden="true"></param>
+  <param name="depth" type="float" precision="1" min="0" max="43" appearance="full" gui-text="Cut depth in mm">3.0</param>
+  <effect>
+    <effects-menu>
+      <submenu name="Shaper Origin"/>
+    </effects-menu>
+  </effect>
+  <script>
+    <command location="inx" interpreter="python">shaper_origin.py</command>
+  </script>
+</inkscape-extension>
