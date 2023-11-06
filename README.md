@@ -8,7 +8,7 @@ Inscape extension to add a Shaper Origin menu to set cut parameters
 Copy the files in the ext directory to `~/Library/Application Support/org.inkscape.Inkscape/config/inkscape/extensions/`, e.g.
 
 ```shell
-$ cp ext/* '~/Library/Application Support/org.inkscape.Inkscape/config/inkscape/extensions/'
+cp ext/* '~/Library/Application Support/org.inkscape.Inkscape/config/inkscape/extensions/'
 ```
 
 ### Linux / Windows / non-standard Mac installs
