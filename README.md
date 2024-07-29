@@ -3,7 +3,7 @@ Inscape extension to add a Shaper Origin menu to set cut parameters
 
 ## Install
 
-First you need to download a copy of the source code. If you're familiar with Git just clone to repo, otherwise click on the green Code menu, and pick Download Zip.
+First you need to download a copy of the source code. If you're familiar with Git just clone to repo, otherwise click on the green Code menu, and pick Download ZIP.
 
 ### MacOS
 
