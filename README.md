@@ -10,7 +10,7 @@ First you need to download a copy of the source code. If you're familiar with Gi
 Copy the files in the ext directory to `~/Library/Application Support/org.inkscape.Inkscape/config/inkscape/extensions/`, e.g.
 
 ```shell
-cp ext/* '~/Library/Application Support/org.inkscape.Inkscape/config/inkscape/extensions/'
+cp ext/* ~/Library/Application\ Support/org.inkscape.Inkscape/config/inkscape/extensions/
 ```
 
 ### Linux / Windows / non-standard Mac installs
