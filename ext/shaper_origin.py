@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding=utf-8
 #
-# Copyright (C) [YEAR] [YOUR NAME], [YOUR EMAIL]
+# Copyright (C) 2025 Steve Harris, https://github.com/swh
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -18,29 +18,30 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #
 """
-Description of this extension
+This extension adds a menu to enable quick setting of the colours and
+attributes that Shaper Origin handheld CNC routers use to control cuts.
 """
 
 import sys
-
 import inkex
 
 inkex.NSS["shaper"] = "http://www.shapertools.com/namespaces/shaper"
 
 class ShaperOriginExtension(inkex.EffectExtension):
-    """Please rename this class, don't keep it unnamed"""
     def add_arguments(self, pars):
         pars.add_argument("--pocketing", type=inkex.Boolean, default=False, help="Convert to pocketing cut")
         pars.add_argument("--online", type=inkex.Boolean, default=False, help="Convert to on line cut")
         pars.add_argument("--exterior", type=inkex.Boolean, default=False, help="Convert to exterior cut")
         pars.add_argument("--interior", type=inkex.Boolean, default=False, help="Convert to interior cut")
         pars.add_argument("--guide", type=inkex.Boolean, default=False, help="Convert to guide")
-        pars.add_argument("--set-depth-mm", type=inkex.Boolean, default=False, help="Convert to guide")
+        # This tells the plugin that we're using mm
+        pars.add_argument("--set-depth-mm", type=inkex.Boolean, default=False, help="Hidden option, ignore")
+        # This tell it that depth changes are being applied
         pars.add_argument("--depth", type=str, default="1", help="Set cut depth")
 
     def effect(self):
         if self.options.set_depth_mm:
-            depth = str(round(float(self.options.depth), 1))+'mm'
+            depth = str(round(float(self.options.depth)/10, 2))+'cm'
 
         for elem in self.svg.selection:
             if self.options.pocketing:
